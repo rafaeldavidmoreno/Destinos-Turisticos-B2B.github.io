@@ -92,7 +92,7 @@ section{
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
     background-size: cover;
-    background: url(../img/slider2.jpg);
+    background: url(../img/slider1.jpg);
 }
 .inicio-text h1{
     font-size: var(--big-font);
