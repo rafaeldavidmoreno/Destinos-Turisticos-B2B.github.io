@@ -33,11 +33,6 @@ function changeBackground() {
 
 setInterval(changeBackground, 5000);
 
-backgrounds.forEach(function(image) {
-  var img = new Image();
-  img.src = image;
-});
-
 jQuery(function($){
     $('.slider-testimonial').sss({
         slideShow : true,
