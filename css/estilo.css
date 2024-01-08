@@ -93,7 +93,7 @@ section{
     align-items: center;
     background-size: 100% 100%;
     background-attachment: fixed;
-    transition: background-image 1s ease-in-out;
+    background: url(./img/slider4.jpg);
 }
 .inicio-text h1{
     font-size: var(--big-font);
