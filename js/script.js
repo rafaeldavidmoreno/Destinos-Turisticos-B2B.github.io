@@ -18,10 +18,10 @@ window.onscroll = () => {
 }
 
 var backgrounds = [
-    'url(../img/slider1.JPG)',
-    'url(../img/slider2.JPG)',
-    'url(../img/slider3.JPG)',
-    'url(../img/slider4.JPG)'
+    'url(./img/slider1.JPG)',
+    'url(./img/slider2.JPG)',
+    'url(./img/slider3.JPG)',
+    'url(./img/slider4.JPG)'
 ];
 
 var index = 0; 
