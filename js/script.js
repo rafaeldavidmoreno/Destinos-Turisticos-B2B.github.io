@@ -17,7 +17,6 @@ window.onscroll = () => {
     navbar.classList.remove('open');
 }
 
-// Para controlar el slider de las imagenes del fondo
 var backgrounds = [
     'url(../img/slider1.jpg)',
     'url(../img/slider2.jpg)',
@@ -25,24 +24,20 @@ var backgrounds = [
     'url(../img/slider4.jpg)'
 ];
 
-var index = 0; // Índice para controlar el cambio de imagen
+var index = 0; 
 
 function changeBackground() {
-    document.querySelector('.inicio').style.backgroundImage = backgrounds[index]; // Cambiar la imagen de fondo
-    index = (index + 1) % backgrounds.length; // Index circular para volver al inicio al final del array
+    document.querySelector('.inicio').style.backgroundImage = backgrounds[index]; 
+    index = (index + 1) % backgrounds.length; 
 }
 
-// Llamar a la función de cambio de imagen cada 5 segundos
 setInterval(changeBackground, 5000);
 
-// Precargar imágenes
 backgrounds.forEach(function(image) {
   var img = new Image();
   img.src = image;
 });
 
-
-//Para hacer el carrusel de testimonios
 jQuery(function($){
     $('.slider-testimonial').sss({
         slideShow : true,
@@ -50,14 +45,10 @@ jQuery(function($){
     });
 });
 
-/** Super Simple Slider by @intllgnt **/
-
-;(function($, window, document, undefined ) {
+(function($, window, document, undefined ) {
 
     $.fn.sss = function(options) {
-    
-    // Options
-    
+   
         var settings = $.extend({
         slideShow : true,
         startOn : 0,
@@ -67,9 +58,7 @@ jQuery(function($){
         }, options);
     
         return this.each(function() {
-    
-    // Variables
-    
+       
         var
         wrapper = $(this),
         slides = wrapper.children().wrapAll('<div class="sss"/>').addClass('ssslide'),
@@ -85,14 +74,10 @@ jQuery(function($){
         prev,
         next,
     
-    // Reset Slideshow
-    
         reset_timer = settings.slideShow ? function() {
         clearTimeout(timer);
         timer = setTimeout(next_slide, settings.speed);
         } : $.noop;
-    
-    // Animate Slider
     
         function get_height(target) {
         return ((slides.eq(target).height() / slider.width()) * 100) + '%';
@@ -114,15 +99,11 @@ jQuery(function($){
     
         }};
     
-    // Next Slide
-    
         function next_slide() {
         target = target === slide_count - 1 ? 0 : target + 1;
         animate_slide(target);
         }
-    
-    // Prev Slide
-    
+
         function prev_slide() {
         target = target === 0 ? slide_count - 1 : target - 1;
         animate_slide(target);
@@ -152,7 +133,6 @@ jQuery(function($){
         });
     
         });
-    // End
     
     });
     
