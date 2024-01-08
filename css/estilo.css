@@ -91,9 +91,8 @@ section{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background: url(./img/slider4.jpg);
+    background-size: cover;
+    background: url(../img/slider2.jpg);
 }
 .inicio-text h1{
     font-size: var(--big-font);
