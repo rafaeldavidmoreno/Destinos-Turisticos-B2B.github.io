@@ -17,22 +17,6 @@ window.onscroll = () => {
     navbar.classList.remove('open');
 }
 
-var backgrounds = [
-    'url(./img/slider1.JPG)',
-    'url(./img/slider2.JPG)',
-    'url(./img/slider3.JPG)',
-    'url(./img/slider4.JPG)'
-];
-
-var index = 0; 
-
-function changeBackground() {
-    document.querySelector('.inicio').style.backgroundImage = backgrounds[index]; 
-    index = (index + 1) % backgrounds.length; 
-}
-
-setInterval(changeBackground, 5000);
-
 jQuery(function($){
     $('.slider-testimonial').sss({
         slideShow : true,
