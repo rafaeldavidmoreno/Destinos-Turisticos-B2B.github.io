@@ -20,7 +20,7 @@ window.onscroll = () => {
 jQuery(function($){
     $('.slider-testimonial').sss({
         slideShow : true,
-        speed : 1500000
+        speed : 3000
     });
 });
 
