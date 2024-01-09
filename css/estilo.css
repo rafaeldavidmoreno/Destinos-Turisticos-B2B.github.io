@@ -91,8 +91,8 @@ section{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
-    background-size: cover;
     background: url(../img/gran-muthu-almirante1.jpeg);
+    background-size: cover;
 }
 .inicio-text h1{
     font-size: var(--big-font);
