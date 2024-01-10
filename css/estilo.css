@@ -227,6 +227,16 @@ section{
     color: var(--second-color);
     text-align: justify;
 }
+.read-more-btn{
+    color: #0984e3;
+	cursor: pointer;
+}
+.read-more-text{
+    display: none;
+}
+.read-more-text--show{
+    display: inline;
+}
 
 /*----------------------------- sección destination ---------------------------------------- */
 
