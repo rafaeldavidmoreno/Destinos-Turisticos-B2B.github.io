@@ -96,7 +96,7 @@ section{
 }
 .inicio-text h1{
     font-size: var(--big-font);
-    line-height: 1.2;
+    line-height: 1.0;
     color: var(--bg-color);
     font-family: 'Paytone One', sans-serif;
     letter-spacing: 4px;
@@ -104,9 +104,9 @@ section{
 }
 .inicio-text p{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bold;
-    line-height: 38px;
+    line-height: 36px;
     margin-bottom: 50px;
 }
 
