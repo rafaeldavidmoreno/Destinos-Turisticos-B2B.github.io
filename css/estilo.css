@@ -99,7 +99,7 @@ section{
     line-height: 1.0;
     color: var(--bg-color);
     font-family: 'Paytone One', sans-serif;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
     margin-bottom: 20px;
 }
 .inicio-text p{
