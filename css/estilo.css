@@ -111,7 +111,6 @@ section{
 }
 
 /*----------------------------- sección container ---------------------------------------- */
-
 .text{
     text-align: center;
 }
@@ -158,6 +157,86 @@ section{
     box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
     border: 1px solid transparent;
     transform: translateY(-3px);
+}
+
+/* ----------------------------seccion sobre-mi----------------------------------------------------------------*/
+.sobre-mi{
+    border-top: solid white;
+}
+.heading-sobre-mi{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading-sobre-mi h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading-sobre-mi p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+    line-height: 30px;
+}
+.container-sobre-mi{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex: 1;
+    text-align: center;
+}
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.about-content p{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 35px;
+    line-height: 30px;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more:hover{
+    background-color: #3e8e41;
 }
 
 /*----------------------------- sección Package ---------------------------------------- */
@@ -511,4 +590,100 @@ section{
     .client-name{
         font-size: 25px;
     }
+}
+
+@media (max-width:1230px){
+    .nav__menu{
+        display: block;
+    }
+
+    .nav__link--menu{
+        position: fixed;
+        background-color: #000;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .nav__link--show{
+        --show: block;
+        opacity:1 ;
+        pointer-events: unset;
+    }
+
+    .nav__close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .hero__title{
+        font-size: 2.5rem;
+    }
+    
+    .heading-sobre-mi{
+        padding: 0px 20px;
+    }
+
+    .heading-sobre-mi h1{
+        font-size: 30px;
+    }
+
+    .heading-sobre-mi p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    .container-sobre-mi{
+        padding: 0px;
+    }
+
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    }
+    .row h1{
+        font-size: 30px;
+    }
+
+    .questions__offer .subtitle{
+        line-height: 50px;
+        font-size: 30px;
+    }
+    
+    .questions__copy{
+        width: 100%;
+    }
+
+    .nav__link--footer{
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+
 }
